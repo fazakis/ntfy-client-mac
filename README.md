@@ -98,6 +98,28 @@ Notes:
 - If macOS shows **Requires approval in System Settings**, open **System Settings → General → Login Items** and allow NtfyMacAlert.
 - The login item launches the menu-bar app; it will also reconnect automatically if you previously left it connected.
 
+## Unsigned release / Gatekeeper
+
+NtfyMacAlert is currently distributed as an unsigned/ad-hoc signed app. Because it is not Apple-notarized, macOS may show:
+
+> Apple could not verify “NtfyMacAlert.app” is free of malware that may harm your Mac or compromise your privacy.
+
+That popup may only show **Move to Trash** and **Done**. To open the app anyway:
+
+1. Click **Done**.
+2. Open **System Settings → Privacy & Security**.
+3. Scroll to the **Security** section near the bottom.
+4. Find the message saying `NtfyMacAlert.app` was blocked.
+5. Click **Open Anyway**, then confirm.
+
+If the **Open Anyway** button does not appear, remove the download quarantine flag manually:
+
+```bash
+xattr -dr com.apple.quarantine /Applications/NtfyMacAlert.app
+```
+
+Adjust the path if you placed the app somewhere else.
+
 ## Send a test message
 
 With the app connected to `my-test-topic-123`, publish a message:
