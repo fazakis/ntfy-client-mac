@@ -20,7 +20,6 @@
 		A1000000000000000000000B /* KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000000B /* KeychainStore.swift */; };
 		A1000000000000000000000D /* LaunchAtLoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000000E /* LaunchAtLoginManager.swift */; };
 		A1000000000000000000000E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000000F /* Assets.xcassets */; };
-		A1000000000000000000000F /* notification-badge.png in Resources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000010 /* notification-badge.png */; };
 		A1000000000000000000000C /* alert.aiff in Resources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000000C /* alert.aiff */; };
 /* End PBXBuildFile section */
 
@@ -39,7 +38,6 @@
 		A2000000000000000000000E /* LaunchAtLoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchAtLoginManager.swift; sourceTree = "<group>"; };
 		A2000000000000000000000F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2000000000000000000000C /* alert.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = alert.aiff; sourceTree = "<group>"; };
-		A20000000000000000000010 /* notification-badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "notification-badge.png"; sourceTree = "<group>"; };
 		A2000000000000000000000D /* NtfyMacAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NtfyMacAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -127,7 +125,6 @@
 			isa = PBXGroup;
 			children = (
 				A2000000000000000000000C /* alert.aiff */,
-				A20000000000000000000010 /* notification-badge.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -200,7 +197,6 @@
 			files = (
 				A1000000000000000000000E /* Assets.xcassets in Resources */,
 				A1000000000000000000000C /* alert.aiff in Resources */,
-				A1000000000000000000000F /* notification-badge.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
