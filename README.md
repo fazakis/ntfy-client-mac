@@ -12,7 +12,7 @@ Milestone 1 focuses on reliable real-time receiving, clear in-app display, nativ
 - Subscribe to one topic/channel at a time via the ntfy JSON stream endpoint.
 - Optional Bearer token authentication.
 - Real-time alert list with time received, topic, title, message, priority, and tags.
-- Native macOS notifications using `UserNotifications`, with first-launch permission request and in-app permission status.
+- Native macOS notifications using `UserNotifications`, with first-launch permission request, in-app permission status, app icon, and bundled notification artwork.
 - Bundled `alert.aiff` sound played via `NSSound`.
 - Sound enabled toggle, Test Sound button, Test Notification button, and Open Notification Settings button.
 - Optional **Open at login** toggle using native macOS `SMAppService` login items.

@@ -132,6 +132,8 @@ final class NotificationManager: NSObject, UNUserNotificationCenterDelegate {
             content.userInfo["click"] = click
         }
 
+        content.attachments = notificationAttachments()
+
         // The app plays its own bundled characteristic sound via NSSound. We still
         // present the native banner/list entry here, including while the menu-bar
         // popover is open, but avoid adding a second default notification sound.
@@ -153,6 +155,19 @@ final class NotificationManager: NSObject, UNUserNotificationCenterDelegate {
         willPresent notification: UNNotification
     ) async -> UNNotificationPresentationOptions {
         [.banner, .list]
+    }
+
+    private func notificationAttachments() -> [UNNotificationAttachment] {
+        guard let imageURL = Bundle.main.url(forResource: "notification-badge", withExtension: "png") else {
+            return []
+        }
+
+        do {
+            return [try UNNotificationAttachment(identifier: "ntfy-artwork", url: imageURL)]
+        } catch {
+            print("NtfyMacAlert notification attachment failed: \(error.localizedDescription)")
+            return []
+        }
     }
 
     private func notificationTitle(for message: NtfyMessage) -> String {
