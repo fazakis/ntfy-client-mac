@@ -93,7 +93,7 @@ final class NotificationManager: NSObject, UNUserNotificationCenterDelegate {
     }
 
     func openSystemNotificationSettings() {
-        let bundleIdentifier = Bundle.main.bundleIdentifier ?? "local.NtfyMacAlert"
+        let bundleIdentifier = Bundle.main.bundleIdentifier ?? "gr.fazakis.NtfyMacAlert"
         let urlStrings = [
             "x-apple.systempreferences:com.apple.preference.notifications?id=\(bundleIdentifier)",
             "x-apple.systempreferences:com.apple.preference.notifications",
