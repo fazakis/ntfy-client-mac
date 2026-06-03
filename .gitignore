@@ -1,0 +1,20 @@
+# Xcode
+DerivedData*/
+build/
+*.xcuserdata/
+*.xcuserstate
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
+
+# Release artifacts
+dist/
+*.dSYM.zip
+*.ipa
+
+# macOS
+.DS_Store
+
+# Local/task instructions
+INSTRUCTIONS.md
+IS.md
